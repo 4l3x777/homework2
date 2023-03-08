@@ -1,3 +1,14 @@
+# vscode
+.vscode
+ip_filter.exe
+test_ip_filter_gtest.exe
+md5.lib
+ip_filter_class.lib
+result.txt
+
+# cmake
+/build/
+
 # Prerequisites
 *.d
 
