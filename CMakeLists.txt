@@ -79,7 +79,7 @@ target_link_options(ip_filter PRIVATE -static -static-libgcc -static-libstdc++)
 target_link_options(test_ip_filter_gtest PRIVATE -static -static-libgcc -static-libstdc++)
 
 if (MSVC)
-    target_compile_options(ip_filter_cli PRIVATE /W4)
+    target_compile_options(ip_filter PRIVATE /W4)
     target_compile_options(test_ip_filter_gtest PRIVATE /W4)
     target_compile_options(md5_hash PRIVATE /W4)
     target_compile_options(ip_filter_class PRIVATE /W4)
