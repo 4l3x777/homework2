@@ -8,16 +8,18 @@
 #include <memory>
 #include <algorithm>
 #include <sstream>
+#include <array>
 
 using namespace std;
+using IpAddressFormat = tuple<int, int, int, int>;
 
 vector<string> split(const string &str, char d);
 
 class IpFilter {
-    vector<vector<string>> ip_pool;
+    vector<array<int, tuple_size_v<IpAddressFormat>>> ip_pool;
     
-    void ip_print(const vector<vector<string>>& container);
-    void ip_print(const vector<string>& ip);
+    void ip_print(const vector<array<int, 4>>& container);
+    void ip_print(const array<int, 4>& ip);
 
 public:
     void reverse_lexicographically_sort();
